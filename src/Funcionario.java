@@ -3,7 +3,7 @@ public class Funcionario {
 	String nome;
 	double salario;
 	String departamento;
-	String entradaNoBanco;
+	Data entradaNoBanco;
 	String RG;
 	
 	void recebeAumento(double valorDoAumento) {
