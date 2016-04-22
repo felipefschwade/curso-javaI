@@ -18,6 +18,7 @@ public class Funcionario {
 	    System.out.println("Salário: R$" + this.salario);
 	    System.out.println("Data de entrada: " + this.entradaNoBanco);
 	    System.out.println("RG: " + this.RG);
+	    System.out.println("Data de entrada: "+this.entradaNoBanco.dia+"/"+this.entradaNoBanco.mes+"/"+this.entradaNoBanco.ano );
 	    System.out.println("");
 	}
 }

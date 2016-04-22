@@ -9,6 +9,6 @@ public class TestaFuncionario {
 		f1.nome = "Hugo";
 		f1.salario = 100;
 		f1.entradaNoBanco = data;
-		System.out.println("Data de entrada: "+f1.entradaNoBanco.dia+"/"+f1.entradaNoBanco.mes+"/"+f1.entradaNoBanco.ano );
+		f1.mostra();
 	}
 }
