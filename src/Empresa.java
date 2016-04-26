@@ -12,4 +12,12 @@ public class Empresa {
 		}
 		
 	}
+	void mostraEmpregados() {
+		for (int i = 0; i < this.funcionario.length; i++) {
+			if (this.funcionario[i] == null) {
+				continue;
+			}
+			this.funcionario[i].mostra();
+		}
+	}
 }
