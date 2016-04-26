@@ -14,5 +14,13 @@ public class TestaEmpresa {
 	        empresa.adiciona(f, i);
 	    }
 	    empresa.mostraEmpregados();
+	    Funcionario f = new Funcionario();
+        f.salario = 1000 * 100;
+        Data data = new Data();
+		data.dia = 1;
+		data.mes = 12;
+		data.ano = 2012;
+		f.entradaNoBanco = data;
+		System.out.println(empresa.contem(f));
 	}
 }

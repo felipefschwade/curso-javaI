@@ -20,4 +20,12 @@ public class Empresa {
 			this.funcionario[i].mostra();
 		}
 	}
+	boolean contem(Funcionario f) {
+		for (int i = 0; i < this.funcionario.length; i++) {
+			if (f == this.funcionario[i]) {
+				return true;
+			}
+		}
+		return false;
+	}
 }
