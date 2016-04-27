@@ -4,6 +4,11 @@ public class Empresa {
 	private int cnpj;
 	private Funcionario[] funcionario;
 	
+	public Empresa(int funcionarios) {
+		this.funcionario = new Funcionario[funcionarios];
+	}
+	
+	
 	public String getNome() {
 		return nome;
 	}
@@ -18,9 +23,6 @@ public class Empresa {
 	}
 	public Funcionario getFuncionario(int posicao) {
 		return this.funcionario[posicao];
-	}
-	public void setFuncionarios(int quantidade) {
-		this.funcionario = new Funcionario[quantidade];
 	}
 	void adiciona(Funcionario funcionario, int posicao) {
 		if (this.funcionario[posicao] == null) {
