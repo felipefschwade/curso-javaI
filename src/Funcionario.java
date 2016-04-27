@@ -6,6 +6,14 @@ public class Funcionario {
 	public Data entradaNoBanco;
 	private String RG;
 	
+	public Funcionario(String nome) {
+		this.nome = nome;
+	}
+	
+	public Funcionario() {
+		
+	}
+	
 	void recebeAumento(double valorDoAumento) {
 		this.salario += valorDoAumento;
 	}
