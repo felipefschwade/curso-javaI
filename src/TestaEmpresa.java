@@ -5,7 +5,7 @@ public class TestaEmpresa {
 		empresa.funcionario = new Funcionario[10];
 	    for (int i = 0; i < 5; i++) {
 	        Funcionario f = new Funcionario();
-	        f.salario = 1000 + i * 100;
+	        f.setSalario(1000 + i * 100);
 	        Data data = new Data();
 			data.dia = i + 1;
 			data.mes = 12;
@@ -15,7 +15,7 @@ public class TestaEmpresa {
 	    }
 	    empresa.mostraEmpregados();
 	    Funcionario f = new Funcionario();
-        f.salario = 1000 * 100;
+	    f.setSalario(10000);
         Data data = new Data();
 		data.dia = 1;
 		data.mes = 12;

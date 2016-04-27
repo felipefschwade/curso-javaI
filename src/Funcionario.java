@@ -1,15 +1,15 @@
 
 public class Funcionario {
-	String nome;
-	double salario;
-	String departamento;
-	Data entradaNoBanco;
-	String RG;
+	public String nome;
+	private double salario;
+	public String departamento;
+	public Data entradaNoBanco;
+	private String RG;
 	
 	void recebeAumento(double valorDoAumento) {
 		this.salario += valorDoAumento;
 	}
-	double calculaGanhoAnual() {
+	double getGanhoAnual() {
 		return salario * 12;
 	}
 	void mostra() {
@@ -19,5 +19,11 @@ public class Funcionario {
 	    System.out.println("RG: " + this.RG);
 	    System.out.println(this.entradaNoBanco.getFormatada());
 	    System.out.println("");
+	}
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	public String getRG() {
+		return RG;
 	}
 }

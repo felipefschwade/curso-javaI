@@ -7,7 +7,7 @@ public class TestaFuncionario {
 		data.mes = 12;
 		data.ano = 2012;
 		f1.nome = "Hugo";
-		f1.salario = 100;
+		f1.setSalario(100);
 		f1.entradaNoBanco = data;
 		f1.mostra();
 	}
