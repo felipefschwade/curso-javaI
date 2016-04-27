@@ -2,7 +2,7 @@
 public class TestaEmpresa {
 	public static void main(String[] args) {
 		Empresa empresa = new Empresa();
-		empresa.funcionario = new Funcionario[10];
+		empresa.setFuncionarios(10);
 	    for (int i = 0; i < 5; i++) {
 	        Funcionario f = new Funcionario();
 	        f.setSalario(1000 + i * 100);

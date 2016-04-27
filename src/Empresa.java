@@ -1,9 +1,27 @@
 
 public class Empresa {
-	String nome;
-	int cnpj;
-	Funcionario[] funcionario;
+	private String nome;
+	private int cnpj;
+	private Funcionario[] funcionario;
 	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public int getCnpj() {
+		return cnpj;
+	}
+	public void setCnpj(int cnpj) {
+		this.cnpj = cnpj;
+	}
+	public Funcionario getFuncionario(int posicao) {
+		return this.funcionario[posicao];
+	}
+	public void setFuncionarios(int quantidade) {
+		this.funcionario = new Funcionario[quantidade];
+	}
 	void adiciona(Funcionario funcionario, int posicao) {
 		if (this.funcionario[posicao] == null) {
 			this.funcionario[posicao] = funcionario;
